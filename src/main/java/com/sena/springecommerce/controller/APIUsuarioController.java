@@ -26,7 +26,7 @@ public class APIUsuarioController {
 	private IUsuarioService usuarioService;
 
 	@GetMapping("/list")
-	public List<Usuario> getAlUsuarios() {
+	public List<Usuario> getAllUsuarios() {
 		return usuarioService.findAll();
 	}
 

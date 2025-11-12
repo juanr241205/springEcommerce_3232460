@@ -44,7 +44,7 @@ public class APIProductoController {
 		return producto.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
 	}
 
-	// Endpoint POST para crear un nuevo producto
+	// Endpoint POST para crear un nuevo producto --- OrdenController cambio stock?
 	@PostMapping("/create")
 	public ResponseEntity<Producto> createProduct(@RequestBody Producto producto) {
 		Usuario u = usuarioService.findById(1).get();
